@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zynta Referral System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zynta Referral System</h1>
+            <p>Join our community and earn points through referrals!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="registration-section">
+                <h2>Register New User</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="referralCode">Referral Code (Optional)</label>
+                        <input type="text" id="referralCode" name="referralCode" placeholder="Enter referral code">
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+                
+                <div id="messageArea" class="message-area"></div>
+            </div>
+
+            <div class="users-section">
+                <h2>All Users</h2>
+                <div id="usersList" class="users-list">
+                    <!-- Users will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
